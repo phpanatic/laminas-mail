@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-mail",
+    "name": "phpantic/laminas-mail",
     "description": "Provides generalized functionality to compose and send both text and MIME-compliant multipart e-mail messages",
     "keywords": [
         "laminas",
@@ -9,10 +9,10 @@
     "abandoned": "symfony/mailer",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+        "php": "^8.4",
         "ext-iconv": "*",
         "laminas/laminas-loader": "^2.9.0",
-        "laminas/laminas-mime": "^2.11.0",
+        "phpantic/laminas-mime": "dev-php8.4-compatibility",
         "laminas/laminas-stdlib": "^3.17.0",
         "laminas/laminas-validator": "^2.31.0",
         "symfony/polyfill-mbstring": "^1.27.0",
@@ -27,6 +27,9 @@
         "psalm/plugin-phpunit": "^0.18.4",
         "symfony/process": "^6.3.4 || ^7.0.0",
         "vimeo/psalm": "^5.15"
+    },
+    "replace": {
+        "laminas/laminas-mail": "*"
     },
     "suggest": {
         "laminas/laminas-servicemanager": "^3.21 when using SMTP to deliver messages"
