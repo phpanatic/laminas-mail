@@ -9,7 +9,7 @@
     "abandoned": "symfony/mailer",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^8.4",
+        "php": "^8.1",
         "ext-iconv": "*",
         "laminas/laminas-loader": "^2.9.0",
         "phpantic/laminas-mime": "dev-php8.4-compatibility",
